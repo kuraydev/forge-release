@@ -43,15 +43,16 @@
 
     <section class="legal">
       <h1>Privacy Policy</h1>
-      <div class="updated">Last updated: August 3, 2026</div>
+      <div class="updated">Last updated: August 9, 2026</div>
 
       <div class="tldr">
         <strong>The short version.</strong> Forge is a local-first Mac app with no Coursion
-        backend. Your code, files, chats, and API keys stay on your Mac. We don't run analytics,
-        don't track you, and never receive your API keys or the content of your work. The only
-        data that leaves your Mac is what <em>you</em> direct it to: requests to AI providers you
-        configure, sites you open in the browser pane, optional iCloud sync through your own
-        Apple account, and an update check to our website.
+        backend. Your code, files, chats, and API keys stay on your Mac; we never receive your
+        API keys or the content of your work, and we don't track you. Forge sends anonymous
+        crash reports and feature-usage counts (you can turn both off in Settings). Beyond
+        that, data leaves your Mac only where <em>you</em> direct it: requests to AI providers
+        you configure, sites you open in the browser pane, optional iCloud sync through your
+        own Apple account, and an update check to our website.
       </div>
 
       <h2>1. Who we are</h2>
@@ -111,27 +112,38 @@
 
       <h2>4. What we do not do</h2>
       <ul>
-        <li>No analytics, telemetry, ad SDKs, or third-party trackers.</li>
+        <li>No ad SDKs, no third-party trackers, no advertising identifiers, no cross-app tracking.</li>
         <li>No account or sign-up with Coursion is required to use Forge.</li>
         <li>We never receive your API keys, source code, prompts, or file contents.</li>
-        <li>We do not sell or share personal data — we don't collect it to begin with.</li>
+        <li>We do not sell or share personal data.</li>
       </ul>
 
-      <h2>5. Children</h2>
+      <h2>5. Crash reports &amp; anonymous usage data</h2>
+      <p>Forge sends two kinds of anonymous telemetry, both of which you can turn off in
+      Settings (&ldquo;Share anonymous usage &amp; crash data&rdquo;):</p>
+      <ul>
+        <li><strong>Crash reports</strong> — via Sentry (EU-hosted): app version and a technical
+        stack trace when Forge crashes. Never your files, paths, prompts, or keys.</li>
+        <li><strong>Usage counts</strong> — via PostHog (EU-hosted): anonymous events such as
+        &ldquo;a feature was used&rdquo;, with the app version. Which feature, never what it ran
+        on. No user profile is created and events are not linked to your identity.</li>
+      </ul>
+
+      <h2>6. Children</h2>
       <p>Forge is a developer tool not directed to children under 13, and we do not knowingly
       collect data from them.</p>
 
-      <h2>6. Your choices</h2>
+      <h2>7. Your choices</h2>
       <p>You control every outbound path: don't configure a provider key and no AI requests are
       made; leave iCloud sync off and nothing syncs; leave dictation off and the microphone is
       never used. You can delete Forge's local data by removing its Application Support folder and
       any keys from Keychain.</p>
 
-      <h2>7. Changes</h2>
+      <h2>8. Changes</h2>
       <p>We may update this policy as Forge evolves. Material changes will be reflected here with a
       new "last updated" date, and where appropriate surfaced in the app.</p>
 
-      <h2>8. Contact</h2>
+      <h2>9. Contact</h2>
       <p>Questions about privacy? Email
       <a href="mailto:hello@coursion.studio">hello@coursion.studio</a>.</p>
     </section>
