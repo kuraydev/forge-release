@@ -8,6 +8,26 @@
 
     
     <item>
+      <title>Version 0.10.0</title>
+      <pubDate>Wed, 12 Aug 2026 19:13:41 +0300</pubDate>
+      <sparkle:version>169</sparkle:version>
+      <sparkle:shortVersionString>0.10.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p><em>2026-08-12</em></p>
+<ul>
+<li><strong>Forge Remote — your agents on your iPhone.</strong> A companion app mirrors every workspace&#x27;s live status, notifies you the moment a run finishes or stalls waiting on you (approve/deny tool permissions right from the notification), shows each project&#x27;s board, and sends the next prompt straight into a live Claude pane. On your home Wi-Fi it talks to your Mac directly over an encrypted local socket (&quot;Live&quot; badge); away from home it rides your own iCloud — no accounts, no third-party servers. Every loading state says exactly what it&#x27;s doing.</li>
+<li><strong>Streaming a chat no longer lags the whole app.</strong> Each Claude transcript now renders in its own layout island, so a busy agent can&#x27;t freeze typing, hovering, or the other panes — even with several workspaces streaming at once. The idle CPU cost of a multi-workspace window dropped from &quot;fans on&quot; to ~0%.</li>
+<li><strong>Long sessions reopen instantly.</strong> A restored chat shows the newest ten conversation turns; &quot;Show earlier messages&quot; reveals ten more per click instead of rendering the entire history at once.</li>
+<li><strong>Select as much of an answer as you want.</strong> A new I-beam button on each answer switches it to one continuous text view, so a single drag can select any range — alongside the existing drag-select within paragraphs and code blocks.</li>
+<li><strong>Select &amp; copy from agent answers in UI mode.</strong> Assistant answer text is now drag-selectable — highlight any part and ⌘C (or right-click → Copy), the same way code blocks and thinking already were. The per-message Copy / Edit / Retry actions are now always shown in the message header (previously hover-only, which the new text selection hid).</li>
+<li><strong>Graceful first-run &amp; failure states.</strong> Opening an AI pane (Chat, Compare, review) with no API key now shows an upfront &quot;Add your &lt;provider&gt; API key&quot; card that deep-links straight to Settings → AI Providers, instead of failing only on send. Provider errors are mapped to plain language (offline, unreachable host, bad key → check Settings, rate-limited, server error) rather than raw <code>URLError</code>/HTTP dumps. The Review pane on a non-git folder offers a one-click &quot;Initialize repository&quot;; Settings → Agents shows an install hint + copy button for CLIs that aren&#x27;t on PATH.</li>
+<li><strong>Public-launch polish.</strong> The Claude pane header now shows a clickable account chip (your plan, email in the tooltip, one click to the Account panel — or a &quot;Sign in&quot; chip when the session drops auth). Pane-header and sidebar ⋯/✕/toggle controls got accessibility labels so VoiceOver announces them. Board cards no longer overflow their column at narrow pane widths (columns size to the pane, label/due pills truncate). Split-divider drags now persist across store updates instead of snapping back, and no longer accelerate mid-drag. Settings → About links out to the Privacy Policy and Terms.</li>
+<li><strong>Security hardening for public release.</strong> The iCloud auto-clone path now validates git remotes against a transport allowlist (rejecting command-executing <code>ext::</code> helpers and <code>-</code>-option injection) and contains clone destinations strictly under the clone root (no <code>../</code> traversal); <code>git clone</code> also runs with <code>protocol.ext.allow=never</code>. Synced workspace environments are stripped of code-execution-hijacking variables (<code>BASH_ENV</code>, <code>DYLD_INSERT_LIBRARIES</code>, <code>NODE_OPTIONS</code>, …) on ingest. Release builds drop the <code>disable-library-validation</code> entitlement (kept Debug-only for hot-reload), so the shipped app enforces full Hardened Runtime library validation.</li>
+<li><strong>Re-login without leaving Claude Code UI mode.</strong> An <strong>Account</strong> panel (options menu, or type <code>/login</code>) shows who you&#x27;re signed in as and lets you sign in, switch accounts, or log out in place — <code>claude auth login</code> runs right in the pane, surfacing the sign-in link and taking the pasted code. When a turn fails because the session isn&#x27;t authenticated, the pane now says so and opens the sign-in panel instead of a cryptic error, so there&#x27;s no more dropping to Terminal mode just to re-authenticate.</li>
+</ul>]]></description>
+      <enclosure url="https://github.com/kuraydev/forge-release/releases/download/v0.10.0/Forge-0.10.0.dmg" type="application/octet-stream" sparkle:edSignature="98vxK/2NHS402wAkAgXpJPXdIo0O1EhsJ5F4x6QS/dVlVHNjnhqQ1EyJwK9TDy1ksEmniZh+qiXPEdEojXa8AQ==" length="11942037" />
+    </item>
+    <item>
       <title>Version 0.9.1</title>
       <pubDate>Sun, 19 Jul 2026 14:51:22 +0300</pubDate>
       <sparkle:version>104</sparkle:version>
